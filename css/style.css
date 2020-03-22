@@ -1,0 +1,610 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Container */
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex: 1;
+  justify-content: space-between;
+  width: inherit;
+  max-width: inherit;
+}
+
+/* Header */
+header {
+  background-color: #1b2127;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Burger Menu */
+.burger-menu {
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* Sticky Header */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  /* flex-wrap: wrap; */
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.nav-logo {
+  margin: 10px 10px;
+  display: flex;
+}
+
+.nav-logo img {
+  width: 50px;
+  object-fit: cover;
+}
+
+.nav-logo > figcaption {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo a:visited {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.nav-links li {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.nav-links li:hover {
+  margin-right: 10px;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header > div > nav > ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+/* Hero */
+.hero {
+  height: auto;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero h1 {
+  color: white;
+  margin: 30px 15px;
+  line-height: 2;
+  font-size: 30px;
+}
+
+.hero h1 strong {
+  color: #026fff;
+}
+
+.hero figure {
+  margin: 0;
+}
+
+/* Main */
+main section:not(.hero) {
+  border-left: #026fff solid 20px;
+  box-sizing: border-box;
+}
+
+/* Article */
+article {
+  margin: 0;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.portfolio > h1 {
+  margin-left: 20px;
+  color: #026fff;
+  margin-top: 0px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.portfolio > .project:last-child {
+  margin-bottom: 0;
+}
+
+/* Projects */
+.project {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  margin: 0px 10px;
+  margin-bottom: 15px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project div {
+  width: 50%;
+}
+
+.project small {
+  color: rgba(90, 90, 90, 0.808);
+}
+
+.project h2 {
+  font-size: 30px;
+  margin: 0px 0;
+}
+
+.project strong {
+  color: #000000;
+}
+
+.project h5 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.project h6 {
+  font-size: 15px;
+  margin: 10px 0;
+  font-weight: 400;
+  color: rgba(90, 90, 90, 0.808);
+}
+
+.project p {
+  font-weight: 500;
+}
+
+.project a,
+.project a:visited {
+  color: rgba(90, 90, 90, 0.808);
+  word-break: break-all;
+}
+
+.project figure {
+  margin: 0 auto;
+}
+
+.project img {
+  object-fit: cover;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Travels */
+.travels {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.travels-title {
+  padding-top: 20px;
+  padding-left: 20px;
+  border-left: #026fff solid 20px;
+  margin: 0;
+  color: #026fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+/* Countries */
+.country {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  width: 46%;
+  margin: 20px;
+  background-color: #f4fbff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.country-description {
+  margin: 0 40px;
+  padding: 10px 20px;
+  margin-top: -60px;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.country h2 {
+  text-align: center;
+}
+
+.country h6 {
+  color: rgba(90, 90, 90, 0.808);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.country div {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.country a {
+  border: solid 1px #056fff;
+  text-decoration: none;
+  color: #056fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.country img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.country video {
+  width: 100%;
+}
+
+.flexible-container-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact me */
+.contact-me {
+  background-color: #056fff;
+  display: flex;
+  color: white;
+  height: 180px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-me div {
+  display: flex;
+}
+
+.contact-link {
+  background-size: 50px 50px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}
+
+/* Sustituí las imágenes por íconos */
+/* .contact-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
+
+.contact-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+
+.contact-link.github {
+  background-image: url("../images/github.svg");
+}
+
+.contact-link.instagram {
+  background-image: url("../images/instagram.svg");
+} */
+
+.font-icon {
+  font-size: 3em;
+  color: white;
+}
+
+.contact {
+  margin-left: 70px;
+}
+
+.contact input {
+  background-image: url("https://p7.hiclipart.com/preview/431/905/93/email-logo-bounce-address-computer-icons-message-email.jpg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  border: solid 1px gray;
+  padding: 10px 15px 10px 35px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Intento de colocar el ícono del mail en lugar de la imagen */
+/* .contact input:before {
+  font-family: 'icomoon';
+  content: "\e900";
+  font-size: 20px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+.contact button {
+  display: block;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 7px 30px;
+}
+
+.contact p {
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+}
+
+.footer p {
+  background-color: #1b2127;
+  color: white;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav-links {
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 3;
+    width: 100vw;
+    height: 100%;
+    display: block;
+    padding: 0;
+    justify-content: center;
+    transition: .5s;
+    left: -100vw;
+  }
+
+  .nav-links.is-active {
+    left: 0;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav-logo {
+    justify-content: center;
+  }
+
+  .contact-me {
+    display: block;
+    height: auto;
+  }
+
+  .contact-me div {
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact button {
+    margin: 10px auto;
+  }
+
+  .footer > p {
+    justify-content: center;
+  }
+
+  .travels {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-wrap: wrap;
+  }
+
+  .project div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .country {
+    width: 100%;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .hero h1 {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+  .hero img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* Icons */
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?eavk88");
+  src: url("fonts/icomoon.eot?eavk88#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?eavk88") format("truetype"),
+    url("fonts/icomoon.woff?eavk88") format("woff"),
+    url("fonts/icomoon.svg?eavk88#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-mail1:before {
+  content: "\e901";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-letter:before {
+  content: "\e901";
+}
+.icon-envelope:before {
+  content: "\e901";
+}
+.icon-contact:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\e902";
+}
+.icon-facebook-square:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-github:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e906";
+}
+.icon-instagram1:before {
+  content: "\ea92";
+}
+.icon-github1:before {
+  content: "\eab0";
+}
